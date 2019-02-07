@@ -1,0 +1,7 @@
+phage_name;phage_CPT_id; phage_all_links; phage_host_name;timestamp;category;full_name;short_name;results;methods;phage_experimenter_name;phage_isolator_name;type;phage_isolator_loc
+Phage A; CPT ID 123; None ; Vijay;2015-01-25; Dirt;Viney;Kumar;Plents of exp ; Test cases; cory; Manish; Under Process;Tamu
+Phage B; CPT ID 124; None ; mayank;2015-01-27; Not known;Saurabh;Kumar;Good Results ; Test case 12; Rashmi; Singhal; Unknown;Texas
+Phage C; CPT ID 125; None ; vaibhav;2014-01-25; Dirt;tushar;Kumar;Plents of exp ; Test cases; cory; Srishti; Under Process;California
+Phage D; CPT ID 126; None ; tanmay;2013-01-27; Not known;Shubham;Kumar;Good Results ; Test case 12; Mayank; Singhal; Unknown; ASU
+Phage E; CPT ID 127; None ; abhinav;2015-01-25; Dirt;Sameer;Kumar;Plents of exp ; Test cases; cory; Vaibhav; Under Process;UTD
+Phage F; CPT ID 128; None ; shashi;2011-01-27; Not known;prince;singhal;Good Results ; Test case 12; Nikhil; Singhal; Unknown;Twin Cities

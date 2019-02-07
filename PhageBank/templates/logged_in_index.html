@@ -1,0 +1,247 @@
+{% extends login_status|yesno:"logged_in.html,not_logged_in.html" %}
+
+
+{% block content %}
+
+{% load staticfiles %}
+<!-- Header with Background Image -->
+<header class="business-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10"><div id="phage-carousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#phage-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#phage-carousel" data-slide-to="1"></li>
+                <li data-target="#phage-carousel" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/phage_carousel_1.jpg' %}" alt="Phage 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/phage_carousel_2.jpg' %}" alt="Phage 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/phage_carousel_3.jpg' %}" alt="Phage 3">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#phage-carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#phage-carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div></div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-8">
+            <h4 class="mt-4 text-maroon">What We Do</h4>
+            <p class="text-justify">The Center for Phage Technology studies bacterial viruses with the aim of developing therapies to treat antibiotic resistant bacterial infections, a growing problem in human medicine. They have to identify and catalog a large library of these bacteriophage and in doing so, the team generates an immense amount of data that must be available and accessed in a reasonable way by their researchers.</p>
+            <p class="text-justify">Currently, this data is not centralized in a meaningful way and it is increasingly difficult to track where a given phage is in the identification and development process. As they expand the library of phage, this problem will grow to become more and more unmanageable. So a system like the proposed Phage DB project will allow them to store, categorize, and analyze the data more intelligently and easily. Providing an intuitive UI will allow their researchers to interact with the system more regularly and streamline the data storage, allowing more focus on the science over the bookkeeping.</p>
+        </div>
+        <!--<div class="col-sm-1"></div>-->
+        <div class="col-sm-4">
+            <div class="my-5">
+                <div class="news_box">
+                    <div class="news_content"> <b>
+                        <p class="text-maroon">News &amp; Notifications </p>
+                    </b>
+                        <hr color="#800000" size="10">
+                    </div>
+                    <div style="width:325px;height:250px;line-height:2em;overflow-y:scroll;padding:5px;">
+                        <h6><p class="text-maroon"><b><marquee>***
+                            &nbsp;
+                            <a href="https://cpt.tamu.edu/positions/">Click here to view open positions</a>&nbsp;&nbsp;***
+                            &nbsp;&nbsp;
+                            <a href="https://cpt.tamu.edu/publications/"> List of Publications</a>&nbsp;&nbsp;***
+                            &nbsp;&nbsp;
+                            <a href="https://cpt.tamu.edu/491-research-projects/">Know more about Research Projects undergoing in CPT</a>&nbsp;&nbsp;***
+                        </marquee></b></p></h6>
+                        <div class="news_content">
+                            <div class="description">
+                                <h6> <b>
+                                    <li><a href="https://cpt.tamu.edu/category/dev/">Galaxy Updates and Dev/Ops</a>
+                                        <img src="{% static 'images/new3.gif' %}" alt="Demo image"  class="img-rounded img-responsive" />
+                                    </li>
+                                </b>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="news_content">
+                            <div class="description">
+                                <h6> <b>
+                                    <li><a href="https://cpt.tamu.edu/texas-phage-2017/">TexasPhage2017</a>
+                                        <img src="{% static 'images/new3.gif' %}" alt="Demo image"  class="img-rounded img-responsive" />
+                                    </li>
+                                </b>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="news_content">
+                            <div class="description">
+                                <h6> <b>
+                                    <li><a href="https://cpt.tamu.edu/november-downtime/">Downtime for All CPT Services-</a><a>  11/16/2017 November 16, 2017</a>
+                                        {% load staticfiles %}
+                                        <img src="{% static 'images/new3.gif' %}" alt="Demo image"  class="img-rounded img-responsive" />
+
+
+                                    </li>
+                                </b>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="news_content">
+                            <div class="description">
+                                <h6> <b>
+                                    <li><a href="https://cpt.tamu.edu/maintenance-2017-07-05/">Galaxy Maintenance – 2017-07-05 July 5, 2017</a></li>
+                                </b>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="news_content">
+                            <div class="description">
+                                <h6> <b>
+                                    <li><a href="https://cpt.tamu.edu/galaxy-tool-issue-notice-ncbi-eutils-tmhmm-blast-xml-to-gff3/">Galaxy Tool Issue Notice: NCBI EUtils, TMHMM, Blast XML to GFF3  </a><a>March 14, 2017</a></li>
+                                </b>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="news_content">
+                            <div class="description">
+                                <h6> <b>
+                                    <li><a href="https://cpt.tamu.edu/publications/">Publications from the CPT</a></li>
+                                </b>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="news_content">
+                            <div class="description">
+                                <h6> <b>
+                                    <li><a href="https://cpt.tamu.edu/galaxy-tool-issue-notice-ncbi-eutils-tmhmm-blast-xml-to-gff3/">Galaxy Tool Issue Notice: NCBI EUtils, TMHMM, Blast XML to GFF3  </a><a>March 14, 2017</a></li>
+                                </b>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <div>
+        <h4 class="text-maroon">Recently added phages</h4>
+        <div class="row">
+            <div class="col-sm-3 my-3">
+                <div class="card">
+                    <div class="front-img">
+                        {% if count1 == 0 %}
+                        {% load staticfiles %}
+                        <img src="{% static 'images/phage.png' %}" alt="Demo image" width="200" height="200" class="image img-rounded img-responsive"/>
+                        {% else %}
+                        {% for x in dest_dir1|slice:":1" %}
+                        <img class="card-img-top" src="/media/images/{{ phage1 }}/{{ x }}" width="200" height="200" class="image img-rounded img-responsive"/>
+                        {% endfor %}
+                        {% endif %}
+                        <div class="overlay">
+                            <div class="text">{{ phage1 }}</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        {% if phage1 == "" %}
+                            <a class="btn btn-default">Data Not Found</a>
+                            {% else %}
+                        <a href="/view_phage/?name={{ phage1 }}" class="btn btn-default">Read more...</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 my-3">
+                <div class="card">
+                    <div class="front-img">
+                        {% if count2 == 0 %}
+                        {% load staticfiles %}
+                        <img src="{% static 'images/phage.png' %}" alt="Demo image" width="200" height="200" class="image img-rounded img-responsive"/>
+                        {% else%}
+                        {% for x in dest_dir2|slice:":1" %}
+                        <img class="card-img-top" src="/media/images/{{ phage2 }}/{{ x }}" width="200" height="200" class="image img-rounded img-responsive"/>
+                        {% endfor %}
+                        {% endif %}
+                        <div class="overlay">
+                            <div class="text">{{ phage2 }}</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        {% if phage2 == "" %}
+                            <a class="btn btn-default">Data Not Found</a>
+                            {% else %}
+                        <a href="/view_phage/?name={{ phage2 }}" class="btn btn-default">Read more...</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 my-3">
+                <div class="card">
+                    <div class="front-img">
+                        {% if count3 == 0 %}
+                        {% load staticfiles %}
+                        <img src="{% static 'images/phage.png' %}" alt="Demo image" width="200" height="200" class="image img-rounded img-responsive"/>
+                        {% else %}
+                        {% for x in dest_dir3|slice:":1" %}
+                        <img class="card-img-top" src="/media/images/{{ phage3 }}/{{ x }}" width="200" height="200" class="image img-rounded img-responsive"/>
+                        {% endfor %}
+                        {% endif %}
+                        <div class="overlay">
+                            <div class="text">{{ phage3 }}</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        {% if phage3 == "" %}
+                            <a class="btn btn-default">Data Not Found</a>
+                            {% else %}
+                        <a href="/view_phage/?name={{ phage3 }}" class="btn btn-default">Read more...</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <h4 class="mt-4 text-maroon">Contact Us</h4>
+                <address style="font-size: smaller;">
+                    <strong>Center for Phage Technology</strong>&nbsp;&nbsp;&nbsp;<a class="text-maroon" href="http://aggiemap.tamu.edu/?MyMap=9140"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                    <br>Dept. of Biochemistry and Biophysics
+                    <br>Texas A&M University 2128 TAMU
+                    <br>College Station, TX USA 77843
+                    <br>
+                </address>
+                <address style="font-size: smaller;">
+                    <abbr title="Website">Web:</abbr>
+                    <a class="text-maroon" href="https://cpt.tamu.edu/"><u>https://cpt.tamu.edu/</u></a>
+                </address>
+            </div>
+
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<br>
+<br>
+<!-- /.container -->
+
+{% endblock %}
